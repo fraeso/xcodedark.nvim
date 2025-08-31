@@ -238,6 +238,19 @@ function M.setup(colors)
 		-- URI/URL
 		["@text.uri"] = { fg = colors.info, underline = true },
 
+		-- EEx (Embedded Elixir) specific
+		["@keyword.eex"] = { fg = colors.keyword, bold = true },
+		["@function.eex"] = { fg = colors.type },
+		["@function.call.eex"] = { fg = colors.type },
+		["@variable.eex"] = { fg = colors.fg },
+		["@variable.parameter.eex"] = { fg = colors.purple },
+		["@string.eex"] = { fg = colors.string },
+		["@punctuation.delimiter.eex"] = { fg = colors.operator }, -- EEx delimiters <%= %>
+		["@punctuation.bracket.eex"] = { fg = colors.operator }, -- EEx brackets
+		["@tag.eex"] = { fg = colors.keyword, bold = true }, -- HTML tags in EEx
+		["@tag.attribute.eex"] = { fg = colors.property }, -- HTML attributes in EEx
+		["@embedded.eex"] = { fg = colors.fg }, -- General embedded content
+
 		-- Spell
 		["@spell"] = {},
 		["@nospell"] = {},
