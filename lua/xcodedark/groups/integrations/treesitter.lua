@@ -172,7 +172,7 @@ function M.setup(colors)
 		["@variable.parameter.rust"] = { fg = colors.fg },
 
 		-- Java specific
-		["@attribute.java"] = { fg = colors.keyword, bold = false }, -- Spring Boot annotations like @RestController, @Autowired
+		-- ["@attribute.java"] = { fg = colors.keyword, bold = false }, -- Spring Boot annotations like @RestController, @Autowired
 		["@keyword.function.java"] = { fg = colors.keyword, bold = true },
 		["@constructor.java"] = { fg = colors.type },
 		["@function.builtin.java"] = { fg = colors.function_name },
