@@ -141,35 +141,10 @@ function M.setup(colors)
 		["@variable.parameter.typescript"] = { fg = colors.purple }, -- TS parameters purple
 		["@parameter.typescript"] = { fg = colors.purple }, -- TS parameters purple
 
-		-- Go specific (for your Go code example)
-		["@keyword.function.go"] = { fg = colors.keyword, bold = true },
-		["@type.builtin.go"] = { fg = colors.constant }, -- Go built-in types use same blue as nil
-		["@type.go"] = { fg = colors.constant }, -- Go types use same blue as nil
-		["@type.definition.go"] = { fg = colors.constant }, -- Go struct definitions use same blue as nil
-		["@function.builtin.go"] = { fg = colors.function_name },
-		["@function.go"] = { fg = colors.constant }, -- Go functions use same blue as nil
-		["@function.call.go"] = { fg = colors.constant }, -- Go function calls use same blue as nil
-		["@function.method.go"] = { fg = colors.constant }, -- Go methods use same blue as nil
-		["@variable.parameter.go"] = { fg = colors.purple }, -- Go parameters purple
-		["@parameter.go"] = { fg = colors.purple }, -- Go parameters purple (alternative capture)
-
-		-- C/C++ specific
-		["@type.builtin.c"] = { fg = colors.type },
-		["@keyword.storage.c"] = { fg = colors.keyword, bold = true },
-		["@preproc.c"] = { fg = colors.preprocessor, bold = true }, -- Pink and BOLD
-		["@variable.parameter.c"] = { fg = colors.fg },
-		["@variable.parameter.cpp"] = { fg = colors.fg },
-
 		-- Lua specific
 		["@constructor.lua"] = { fg = colors.fg },
 		["@keyword.function.lua"] = { fg = colors.keyword, bold = true },
 		["@variable.builtin.lua"] = { fg = colors.keyword, bold = true },
-
-		-- Rust specific
-		["@attribute.rust"] = { fg = colors.attribute },
-		["@keyword.storage.rust"] = { fg = colors.keyword, bold = true },
-		["@type.builtin.rust"] = { fg = colors.type },
-		["@variable.parameter.rust"] = { fg = colors.fg },
 
 		-- Java specific
 		-- ["@attribute.java"] = { fg = colors.keyword, bold = false }, -- Spring Boot annotations like @RestController, @Autowired
@@ -178,12 +153,6 @@ function M.setup(colors)
 		-- ["@function.builtin.java"] = { fg = colors.function_name },
 		-- ["@type.builtin.java"] = { fg = colors.type },
 		-- ["@variable.parameter.java"] = { fg = colors.purple }, -- Java parameters purple
-
-		-- JSON specific
-		["@label.json"] = { fg = colors.property },
-
-		-- YAML specific
-		["@field.yaml"] = { fg = colors.property },
 
 		-- CSS specific
 		["@property.css"] = { fg = colors.property },
@@ -203,29 +172,6 @@ function M.setup(colors)
 		["@tag.builtin.tsx"] = { fg = colors.keyword, bold = true }, -- HTML tags in TSX (div, span, etc.) should be pink and bold
 		["@tag.attribute.jsx"] = { fg = colors.property },
 		["@tag.attribute.tsx"] = { fg = colors.property },
-
-		-- Markdown specific
-		["@markup.heading"] = { fg = colors.function_name, bold = true },
-		["@markup.heading.1"] = { fg = colors.function_name, bold = true },
-		["@markup.heading.2"] = { fg = colors.function_name, bold = true },
-		["@markup.heading.3"] = { fg = colors.function_name, bold = true },
-		["@markup.heading.4"] = { fg = colors.function_name },
-		["@markup.heading.5"] = { fg = colors.function_name },
-		["@markup.heading.6"] = { fg = colors.function_name },
-		["@markup.list"] = { fg = colors.keyword, bold = true },
-		["@markup.list.checked"] = { fg = colors.git_add },
-		["@markup.list.unchecked"] = { fg = colors.keyword, bold = true },
-		["@markup.link"] = { fg = colors.info },
-		["@markup.link.label"] = { fg = colors.info },
-		["@markup.link.url"] = { fg = colors.string, underline = true },
-		["@markup.raw"] = { fg = colors.string },
-		["@markup.raw.block"] = { fg = colors.string },
-		["@markup.quote"] = { fg = colors.comment },
-		["@markup.math"] = { fg = colors.function_name },
-		["@markup.strong"] = { bold = true },
-		["@markup.italic"] = { italic = true },
-		["@markup.strikethrough"] = { strikethrough = true },
-		["@markup.underline"] = { underline = true },
 
 		-- Diff
 		["@diff.plus"] = { fg = colors.diff_add_fg, bg = colors.diff_add },

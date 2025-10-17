@@ -104,80 +104,12 @@ function M.setup(colors)
 		luaTable = { fg = colors.fg },
 		luaIn = { fg = colors.keyword, bold = true },
 
-		-- C/C++
-		cIncluded = { fg = colors.string },
-		cDefine = { fg = colors.preprocessor, bold = true }, -- Pink
-		cPreCondit = { fg = colors.preprocessor, bold = true }, -- Pink
-		cType = { fg = colors.type },
-		cStorageClass = { fg = colors.keyword, bold = true },
-		cppStructure = { fg = colors.keyword, bold = true },
-		cppAccess = { fg = colors.keyword, bold = true },
-
-		-- Swift specific
-		swiftImports = { fg = colors.preprocessor, bold = true }, -- Pink for imports
-		swiftAttribute = { fg = colors.swift_attribute },
-		swiftType = { fg = colors.type },
-		swiftTypeDeclaration = { fg = colors.keyword, bold = true },
-		swiftVarDeclaration = { fg = colors.keyword, bold = true },
-		swiftFuncDefinition = { fg = colors.keyword, bold = true },
-		swiftInterpolatedWrapper = { fg = colors.operator },
-
-		-- Objective-C specific
-		objcDirective = { fg = colors.objc_directive, bold = true }, -- Pink
-		objcStatement = { fg = colors.keyword, bold = true },
-		objcType = { fg = colors.type },
-		objcClass = { fg = colors.type },
-		objcSuperclass = { fg = colors.type },
-		objcProtocol = { fg = colors.type },
-		objcProperty = { fg = colors.property }, -- Green
-		objcIvar = { fg = colors.fg }, -- Instance variables white
-		objcMethod = { fg = colors.fg }, -- Method names white
-		objcMethodArg = { fg = colors.fg }, -- Method arguments white
-		objcMethodName = { fg = colors.fg }, -- Method names white
-		objcString = { fg = colors.string },
-
-		-- Go specific
-		goPackage = { fg = colors.keyword, bold = true },
-		goImport = { fg = colors.preprocessor, bold = true }, -- Pink for imports
-		goType = { fg = colors.constant }, -- Go types use same blue as nil
-		goStruct = { fg = colors.constant }, -- Go structs use same blue as nil
-		goFunction = { fg = colors.constant }, -- Function names use same blue as nil
-		goMethod = { fg = colors.constant }, -- Method names use same blue as nil
-		goBuiltins = { fg = colors.function_name }, -- Built-in functions green
-		goConstants = { fg = colors.constant },
-
 		-- JSON
 		jsonKeyword = { fg = colors.property }, -- Green
 		jsonString = { fg = colors.string },
 		jsonNumber = { fg = colors.number },
 		jsonBoolean = { fg = colors.boolean, bold = true },
 		jsonNull = { fg = colors.boolean, bold = true },
-
-		-- YAML
-		yamlKey = { fg = colors.property }, -- Green
-		yamlString = { fg = colors.string },
-		yamlNumber = { fg = colors.number },
-		yamlBoolean = { fg = colors.boolean, bold = true },
-		yamlNull = { fg = colors.boolean, bold = true },
-		yamlComment = { fg = colors.comment },
-
-		-- Markdown
-		markdownHeadingDelimiter = { fg = colors.keyword, bold = true },
-		markdownH1 = { fg = colors.function_name, bold = true },
-		markdownH2 = { fg = colors.function_name, bold = true },
-		markdownH3 = { fg = colors.function_name, bold = true },
-		markdownH4 = { fg = colors.function_name },
-		markdownH5 = { fg = colors.function_name },
-		markdownH6 = { fg = colors.function_name },
-		markdownCode = { fg = colors.string },
-		markdownCodeBlock = { fg = colors.string },
-		markdownCodeDelimiter = { fg = colors.operator },
-		markdownBlockquote = { fg = colors.comment },
-		markdownListMarker = { fg = colors.keyword, bold = true },
-		markdownOrderedListMarker = { fg = colors.keyword, bold = true },
-		markdownRule = { fg = colors.operator },
-		markdownLinkText = { fg = colors.info },
-		markdownUrl = { fg = colors.string, underline = true },
 
 		-- Diff
 		diffAdded = { fg = colors.diff_add_fg, bg = colors.diff_add },
