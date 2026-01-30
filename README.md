@@ -23,7 +23,7 @@ A neovim theme that mimics xcodedark from xcode16. I was inspired by xcode theme
 
 ```lua
 {
-  "V4N1LLA-1CE/xcodedark.nvim",
+  "fraeso/xcodedark.nvim",
   lazy = false,
   priority = 1000,
   config = function()
@@ -69,7 +69,7 @@ A neovim theme that mimics xcodedark from xcode16. I was inspired by xcode theme
 
 ```lua
 use {
-  "V4N1LLA-1CE/xcodedark.nvim",
+  "fraeso/xcodedark.nvim",
   config = function()
     require("xcodedark").setup({
       transparent = true,
@@ -131,7 +131,7 @@ require("xcodedark").setup({
 
 ### blink.cmp Integration
 
-The theme includes built-in styling for [blink.cmp](https://github.com/saghen/blink.cmp). For configuration examples, see [`blink-completion.lua`](https://github.com/V4N1LLA-1CE/dotfiles/tree/main/nvim) in my dotfiles.
+The theme includes built-in styling for [blink.cmp](https://github.com/saghen/blink.cmp). For configuration examples, see [`blink-completion.lua`](https://github.com/fraeso/dotfiles/tree/main/nvim) in my dotfiles.
 
 ## Contributing
 
