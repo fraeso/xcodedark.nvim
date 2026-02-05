@@ -129,6 +129,23 @@ require("xcodedark").setup({
 })
 ```
 
+### Color Customization
+
+You can override any color from the base palette to customize the theme to your preferences:
+
+```lua
+require("xcodedark").setup({
+  color_overrides = {
+    keyword = "#E07AB2",     -- Less intense pink (original: #FF7AB2)
+    string = "#E07160",      -- Less intense coral red
+    bg = "#1a1b21",          -- Darker background
+    comment = "#6c7a89",     -- Different comment color
+  }
+})
+```
+
+Available colors to override can be found in [`lua/xcodedark/colors.lua`](lua/xcodedark/colors.lua).
+
 ### blink.cmp Integration
 
 The theme includes built-in styling for [blink.cmp](https://github.com/saghen/blink.cmp). For configuration examples, see [`blink-completion.lua`](https://github.com/fraeso/dotfiles/tree/main/nvim) in my dotfiles.

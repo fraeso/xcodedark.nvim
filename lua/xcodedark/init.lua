@@ -51,6 +51,8 @@ local default_options = {
 	terminal_colors = true,
 	-- Transparent background
 	transparent = false,
+	-- Color overrides - customize any color from the base palette
+	color_overrides = {},
 }
 
 function M.load(opts)
@@ -65,6 +67,13 @@ function M.load(opts)
 	vim.g.colours_name = "xcodedark"
 
 	local colors = require("xcodedark.colors")
+
+	-- Apply color overrides
+	if opts.color_overrides then
+		for color_name, color_value in pairs(opts.color_overrides) do
+			colors[color_name] = color_value
+		end
+	end
 
 	-- Apply transparent background if enabled
 	if opts.transparent then
