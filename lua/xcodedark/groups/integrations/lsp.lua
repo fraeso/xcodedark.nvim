@@ -78,6 +78,14 @@ function M.setup(colors)
 		["@lsp.type.variable.lua"] = { fg = colors.variable },
 		["@lsp.type.parameter.lua"] = { fg = colors.parameter },
 
+		-- Scala specific LSP highlights
+		["@lsp.type.method.scala"] = { fg = colors.function_name },
+		["@lsp.type.keyword.scala"] = { fg = colors.keyword },
+		["@lsp.type.variable.scala"] = { fg = colors.variable },
+		["@lsp.type.type.scala"] = { fg = colors.type },
+		["@lsp.type.comment.scala"] = { fg = colors.comment },
+		["@lsp.type.modifier.scala"] = { fg = colors.keyword },
+
 		-- LSP references and definitions
 		LspReferenceText = { bg = colors.bg_highlight },
 		LspReferenceRead = { bg = colors.bg_highlight },
